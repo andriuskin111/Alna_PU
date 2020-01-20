@@ -78,7 +78,7 @@ namespace Alna_atranka_uzduotis_1
 
         public double PaskaiciuotiMazesnijiKampaTarpRodykliu(int aVal, int aMin)
         {
-            if(aVal > 12)
+            if(aVal >= 12)
             {
                 aVal -= 12;
             }
@@ -127,7 +127,7 @@ namespace Alna_atranka_uzduotis_1
         public void ParodytiRezultata(double aLaipsniaiTarpRod)
         {
             Console.WriteLine($"Mazesnis kampas laipsniais tarp rodykliu yra {aLaipsniaiTarpRod}");
-            Console.WriteLine("Iseiti is programos iveskite [exit], testi bet koks mygtukas [enter]");
+            Console.WriteLine("Iseiti is programos iveskite /exit/ [enter], testi spauskite [enter]");
             string iseiti = Console.ReadLine();
             
             if(iseiti == "exit")
